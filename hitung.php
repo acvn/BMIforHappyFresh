@@ -14,7 +14,7 @@ function LabelBMI($nilai) {
 function nilaiBMI($nilaiberat, $nilaitinggi) {
 	$BMI = $nilaiberat / pow($nilaitinggi,1);
 	$BMI = round($BMI,3);
-	echo "BMI anda adalah " . $BMI . "<br>" ;
+	echo $BMI;
 }
 
 
