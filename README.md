@@ -45,7 +45,11 @@ https://3209-182-253-250-108.ngrok.io/ <br>
 ### Web Server Software
 - ModSecurity<br>
   Mengkonfigurasi web application firewall (WAF) ModSecurity ke web server menggunakan OWASP CRS sebagai rulesnya. Dengan adanya WAF, kita dapat mencegah web server terkena serangan web attack seperti sql-injection, XSS , CSRF dll.<br>
-  ![image](https://user-images.githubusercontent.com/52058660/131086573-536d0215-4b30-4c68-bf65-1db34956a5e2.png)
+  ![image](https://user-images.githubusercontent.com/52058660/131086573-536d0215-4b30-4c68-bf65-1db34956a5e2.png)<br>
+  Setelah implementasi waf, serangan akan diblock.<br>
+  <img width="844" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131095570-9fa82bc5-b706-4406-a191-cebb199d39b1.png"><br>
+  jika anda memiliki SIEM, forward log ini ke SIEM anda untuk di analisa dan lakukan automasi alert.<br>
+
 
 - Fail2ban<br>
   Fail2ban berfungsi untuk mem-banned (blacklist) ip tertentu secara otomatis. Fungsi blacklist ip akan aktif jika ip masuk kedalam kriteria rules yang ada pada fail2ban.
