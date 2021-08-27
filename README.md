@@ -21,9 +21,10 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 - HTML dan CSS - Front-end
 - PHP - Back-emd
 - MySQL - Database
-- Apache2 - Web server
+- Apache2 - Web server sorver
 - ModSecurity - Web application firewall (WAF)
 - Fail2ban - IPS
+- Ubuntu 20.04 - Server
 
 ## Deployment
 - Ngrok<br>
@@ -41,7 +42,7 @@ https://3209-182-253-250-108.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131080651-89f3b9a1-591d-46fc-ba21-d94ba1f44bcc.png)<br>
 
 
-### Web Server
+### Web Server Software
 - ModSecurity<br>
   Mengkonfigurasi web application firewall (WAF) ModSecurity ke web server menggunakan OWASP CRS sebagai rulesnya. Dengan adanya WAF, kita dapat mencegah web server terkena serangan web attack seperti sql-injection, XSS , CSRF dll.<br>
   ![image](https://user-images.githubusercontent.com/52058660/131086573-536d0215-4b30-4c68-bf65-1db34956a5e2.png)
@@ -57,7 +58,11 @@ https://3209-182-253-250-108.ngrok.io/ <br>
   Secara default directory indexing aktif pada server apache2. Hal ini bisa terjadi jika server terdapat folder kosong dan itu sangat berbahaya karena hacker bisa melihat file dan folder apa saja yang ada pada server kita.<br>
   ![image](https://user-images.githubusercontent.com/52058660/131090109-ffa76931-24cb-4dde-886d-8a48cb5ac66a.png)
   
-- Menyebunyikan apache version
+- Menyebunyikan apache version<br>
+  Dengan menyembunyikan informasi mengenai server, kita bisa mencegah dan menyulitkan hacker melakukan reconnaissance terhadap server kita.<br>
+  ![image](https://user-images.githubusercontent.com/52058660/131091665-c0e6b3e8-82fb-4f3d-ab2b-148b4105e8ee.png)
+
+  
 ### Serve
 - Menambahkan SSH public key
 - Setting ufw
