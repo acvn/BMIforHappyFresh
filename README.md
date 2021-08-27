@@ -1,5 +1,5 @@
 # Kalkulator BMI
-Kalkulator BMI (body-mass index) adalah sebuah program yang memeriksa indeks masa tubuh dan mengecek apakah berat badan Anda ideal atau tidak. Rumus yang digunakan untuk menghitung BMI adalah:
+Kalkulator BMI (body-mass index) adalah sebuah program yang menghitung indeks masa tubuh dan mengecek apakah berat badan Anda ideal atau tidak. Rumus yang digunakan untuk menghitung BMI adalah:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/52058660/131056213-14128e17-3e25-458b-b21d-4eba5b19703f.png"></p>
 
