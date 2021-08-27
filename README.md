@@ -9,7 +9,7 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Cara Penggunaan
-Kunjungi link berikut ini, https://f49f-182-253-250-108.ngrok.io/ (maaf url pada gambar berbeda dengan url pada gambar, karena ngrok memberikan id acak setiap pengaktifkannya) . Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm , lalu tekan tombol hitung. program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
+Kunjungi link berikut ini, https://f49f-182-253-250-108.ngrok.io/ (maaf url yang diberikan berbeda dengan url pada gambar, karena ngrok memberikan id acak setiap pengaktifkannya) . Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm , lalu tekan tombol hitung. program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
 **Contoh:**<br>
 Misalkan anda memiliki berat 65 kg dan tinggi 170 cm.<br><br>
 <img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071412-37543785-46d1-4079-a005-568408d4519b.png"><br>
@@ -28,7 +28,7 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 ## Deployment
 - Ngrok<br>
-Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Maaf url pada gambar berbeda dengan url pada gambar, karena ngrok memberikan id acak setiap pengaktifkannya. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, karena ngrok memiliki limit dalam pengoperasiannya. :)<br>
+Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Maaf url yang saya berikan berbeda dengan url pada gambar, karena ngrok memberikan id acak setiap pengaktifkannya. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, saya akan memberikan url terbaru :)<br>
 https://f49f-182-253-250-108.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
 
