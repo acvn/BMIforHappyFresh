@@ -18,15 +18,16 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 
 ## Teknologi
-- HTML dan CSS
-- PHP
-- MySQL
-- Apache2
-- ModSecurity
-- Fail2ban
+- HTML dan CSS -> Front-end
+- PHP -> Back-emd
+- MySQL -> Database
+- Apache2 -> Web server
+- ModSecurity -> Web application firewall (WAF)
+- Fail2ban -> IPS
 
 ## Deployment
-- Ngrok
+- Ngrok<br>
+Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, karena ngrok memiliki limit dalam pengoperasiannya :)
 
 ## Security
 ### Code
