@@ -48,7 +48,7 @@ https://3209-182-253-250-108.ngrok.io/ <br>
   ![image](https://user-images.githubusercontent.com/52058660/131086573-536d0215-4b30-4c68-bf65-1db34956a5e2.png)
 
 - Fail2ban<br>
-  Fail2ban berfungsi untuk mem-banned (blacklist) ip tertentu secara otomatis. Fungsi blacklist ip akan aktif jika ip tersebut...
+  Fail2ban berfungsi untuk mem-banned (blacklist) ip tertentu secara otomatis. Fungsi blacklist ip akan aktif jika ip masuk kedalam kriteria rules yang ada pada fail2ban.
   
 - Setting SSL (self-signed)<br>
   SSL berfungsi untuk meng-encrypt data komunikasi antara client dan server. karena ini adalah proyek demo, saya hanya menggunakan self-signed certificate. Namun untuk proyek skala enterprise diharuskan menggunakan trusted CA sign SSL. Saya juga men-direct setiap request http (port 80) ke https (port 443).<br>
@@ -60,12 +60,23 @@ https://3209-182-253-250-108.ngrok.io/ <br>
   
 - Menyebunyikan apache version<br>
   Dengan menyembunyikan informasi mengenai server, kita bisa mencegah dan menyulitkan hacker melakukan reconnaissance terhadap server kita.<br>
-  ![image](https://user-images.githubusercontent.com/52058660/131091665-c0e6b3e8-82fb-4f3d-ab2b-148b4105e8ee.png)
+  ![image](https://user-images.githubusercontent.com/52058660/131091665-c0e6b3e8-82fb-4f3d-ab2b-148b4105e8ee.png)<br>
+  Setelah dilakukan hardenning<br>
+  ![image](https://user-images.githubusercontent.com/52058660/131092467-1cf00320-348b-47a7-bdb8-71ac10e2851a.png)
 
   
-### Serve
-- Menambahkan SSH public key
-- Setting ufw
+### Server
+- Menambahkan SSH public key<br>
+  Nonaktifkan form login pada ssh, sebagai gantinya gunakan ssh public key untuk proses login. Hal ini berfungsi untuk mencegah brute force attack. Ubah konfigurasi file vim /etc/ssh/sshd_config<br>
+  ```
+  ChallengeResponseAuthentication no
+  PasswordAuthentication no
+  PermitRootLogin no
+  ```
+
+- Setting ufw<br>
+  Hanya aktifkan service / port yang akan digunakan selama operasional, tutup service yang tidak perlu.
+  ![image](https://user-images.githubusercontent.com/52058660/131093255-3d97d7be-0e10-491e-b063-3ea4a79c56f6.png)
 
 ## Ask Me!
 acvn on [Twitter](https://twitter.com/aldi__satria) or [Instagram](https://www.instagram.com/aldi___satria/)
