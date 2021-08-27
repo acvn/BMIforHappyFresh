@@ -77,6 +77,8 @@ https://3209-182-253-250-108.ngrok.io/ <br>
   PasswordAuthentication no
   PermitRootLogin no
   ```
+  ![image](https://user-images.githubusercontent.com/52058660/131098524-50f0a26d-3c82-48b5-8487-49c6b54e4b7b.png)
+
 
 - Setting ufw<br>
   Hanya aktifkan service / port yang akan digunakan selama operasional, tutup service yang tidak perlu.
