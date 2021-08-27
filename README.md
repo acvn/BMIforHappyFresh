@@ -8,6 +8,9 @@
 5. ModSecurity
 6. Fail2ban
 
+## Deployment
+1. Ngrok
+
 ## Security
 ### Code
 1. Input Validation
