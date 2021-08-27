@@ -8,7 +8,7 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Normal (18,4 <= BMI <= 24,9)
 - Overweight (BMI >= 25)
 
-## CARA PENGGUNAAN
+## Cara Penggunaan
 Kunjungi link berikut ini, https://3209-182-253-250-108.ngrok.io/ . Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm , lalu tekan tombol hitung. program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
 **Contoh:**<br>
 Misalkan anda memiliki berat 65 kg dan tinggi 170 cm.<br><br>
@@ -26,14 +26,14 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 - Fail2ban - IPS
 - Ubuntu 20.04 - Server
 
-## DEPLOYMENT
+## Deployment
 - Ngrok<br>
 Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, karena ngrok memiliki limit dalam pengoperasiannya :)<br>
 https://3209-182-253-250-108.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
 
 
-## SECURITY
+## Security
 ### Code
 - Input Validation
   - trim($data) , menghapus newline `\n`/`\r`, tab `\t` dan extraspace 
@@ -86,7 +86,7 @@ Rules pertama berfungsi untuk mendeteksi login failure pada apache, jika terdapa
   ![image](https://user-images.githubusercontent.com/52058660/131093255-3d97d7be-0e10-491e-b063-3ea4a79c56f6.png)
 
 
-## ASK ME!
+## Ask Me!
 acvn on [Twitter](https://twitter.com/aldi__satria) or [Instagram](https://www.instagram.com/aldi___satria/)
 
 
