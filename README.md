@@ -9,7 +9,13 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Cara Penggunaan
-Anda cukup memasukkan nilai berat
+Kunjungi link berikut ini, https://3209-182-253-250-108.ngrok.io/ . Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm , lalu tekan tombol hitung. program akan otomatis menghitung nilai BMI anda dan menampikan dan format json. <br><br>
+**Contoh:**<br>
+Misalkan anda memiliki berat 70 kg dan tinggi 180 cm.<br>
+<img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131059592-4f98ffba-108d-4452-b276-7e14d1763a04.png">
+
+<img width="833" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131059709-7e98dc0b-9b95-4665-887d-277de33644ce.png">
+
 
 ## Teknologi
 - HTML dan CSS
