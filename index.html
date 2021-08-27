@@ -5,21 +5,29 @@
 		<title>Kalkulator Body-Mass Index by Aldi Satria</title>
 		<style>
 			
-		body {font-family: 'Courer New', Monospace}			
+		body {
+			font-family: 'Courer New', Monospace
+		}
 
+		.pembungkus {
+			border: 1px solid;
+			padding: 20px;
+			width: max-content;
+		}
 		</style>
 	</head>
 	<body>
 
+		<div class="pembungkus">
 		<h1>Menghitung BMI</h1>
-
 		<form action="hitung.php" method="GET">
-			<label for="beratbadan">Masukkan berat badan (Kg)</label><br>
+			<label for="beratbadan">Berat badan (Kg)</label><br>
 			<input type="text" id="beratbadan" name="beratbadan" value=""><br><br>
-			<label for="tinggibadan">Masukkan tinggi badan (cm)</label><br>
+			<label for="tinggibadan">Tinggi badan (cm)</label><br>
 			<input type="text" id="tinggibadan" name="tinggibadan" value=""><br><br>
 			<input type="submit" value="Hitung">
 		</form><br>
+		</div>
 
 	</body>
 
