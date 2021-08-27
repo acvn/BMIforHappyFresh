@@ -31,11 +31,11 @@ Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut 
 
 ## Security
 ### Code
-- Input Validation<br>
+- Input Validation
+  - trim($data) , menghapus newline `\n`/`\r`, tab `\t` dan extraspace 
+  - stripslashes($data) , menghapus slash `\`
+  - htmlspecialchars($data) , mengkonversikan predefined characters menjadi HTML entities, contoh: `<` menjadi `&lt;`<br>
 ![image](https://user-images.githubusercontent.com/52058660/131080651-89f3b9a1-591d-46fc-ba21-d94ba1f44bcc.png)<br>
-  - trim($data) , menghapus newline, tab dan extraspace
-  - stripslashes($data) , menghapus newline
-  - htmlspecialchars($data) , mengkonversikan "predefined characters" seperti "<" menjadi HTML entities
 
 
 ### Web Server
