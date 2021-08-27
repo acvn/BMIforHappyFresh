@@ -18,12 +18,12 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 
 ## Teknologi
-- HTML dan CSS -> Front-end
-- PHP -> Back-emd
-- MySQL -> Database
-- Apache2 -> Web server
-- ModSecurity -> Web application firewall (WAF)
-- Fail2ban -> IPS
+- HTML dan CSS - Front-end
+- PHP - Back-emd
+- MySQL - Database
+- Apache2 - Web server
+- ModSecurity - Web application firewall (WAF)
+- Fail2ban - IPS
 
 ## Deployment
 - Ngrok<br>
