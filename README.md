@@ -9,12 +9,12 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Cara Penggunaan
-Kunjungi link berikut ini, https://3209-182-253-250-108.ngrok.io/ . Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm , lalu tekan tombol hitung. program akan otomatis menghitung nilai BMI anda dan menampikan dan format json. <br><br>
+Kunjungi link berikut ini, https://3209-182-253-250-108.ngrok.io/ . Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm , lalu tekan tombol hitung. program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
 **Contoh:**<br>
-Misalkan anda memiliki berat 70 kg dan tinggi 180 cm.<br><br>
+Misalkan anda memiliki berat 65 kg dan tinggi 170 cm.<br><br>
 <img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071412-37543785-46d1-4079-a005-568408d4519b.png"><br>
 
-Setelah menekan tombol hitung, program akan menghasilkan output dalam format json. Dapat dilihat pada gambar dibawah outputnya adalah nilai bmi 21,6 dan label bmi "normal".<br><br>
+Setelah menekan tombol hitung, program akan menghasilkan output dalam format json. Dapat dilihat pada gambar dibawah outputnya adalah nilai bmi 22,5 dan label bmi "normal".<br><br>
 <img width="743" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071519-3062a1e5-1d3f-4dc1-af8f-0982e7eff359.png"><br>
 
 ## Teknologi
@@ -52,7 +52,9 @@ https://3209-182-253-250-108.ngrok.io/ <br>
   ![image](https://user-images.githubusercontent.com/52058660/131097860-997d98b4-3d42-4557-aa97-6f5ed16dfa51.png)
 
 - Fail2ban<br>
-  Fail2ban berfungsi untuk mem-banned (blacklist) ip tertentu secara otomatis. Fungsi blacklist ip akan aktif jika ip masuk kedalam kriteria rules yang ada pada fail2ban.
+  Fail2ban berfungsi untuk mem-banned (blacklist) ip tertentu secara otomatis. Fungsi blacklist ip akan aktif jika ip masuk kedalam kriteria rules yang ada pada fail2ban. Penggunaan rules disesuaikan dengan service apa yang kita gunakan. Karena proyek ini menggunakan apache dan ModSecurity, maka digunakan rules seperti gambar dibawah ini.<br>
+![image](https://user-images.githubusercontent.com/52058660/131128649-225e1979-a318-41b4-8730-cb01b7aec98a.png)<br>
+Rules pertama berfungsi untuk mendeteksi login failure pada apache, jika terdapat ip yang gagal login lebih dari 6 kali dalam kurun waktu 5 menit maka ip tersebut akan di banned selama 10 menit. Rules kedua mengkombinasikan fungsi deteksi serangan pada ModSecurity dan fungsi banned IP pada fail2ban seperti IPS dan IDS. Sama seperti rules pertama, jika terdapat 6 kali deteksi vulnerability pada ip tertentu dalam kurun waktu 5 menit maka ip tersebut akan di banned selama 10 menit juga.
   
 - Setting SSL (self-signed)<br>
   SSL berfungsi untuk meng-encrypt data komunikasi antara client dan server. karena ini adalah proyek demo, saya hanya menggunakan self-signed certificate. Namun untuk proyek skala enterprise diharuskan menggunakan trusted CA sign SSL. Saya juga men-direct setiap request http (port 80) ke https (port 443).<br>
