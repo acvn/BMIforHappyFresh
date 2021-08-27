@@ -27,7 +27,9 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 ## Deployment
 - Ngrok<br>
-Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, karena ngrok memiliki limit dalam pengoperasiannya :)
+Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, karena ngrok memiliki limit dalam pengoperasiannya :)<br>
+![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
+
 
 ## Security
 ### Code
@@ -39,9 +41,16 @@ Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut 
 
 
 ### Web Server
-- ModSecurity
+- ModSecurity<br>
+  Mengkonfigurasi ModSecurity ke web server sebagai web application firewall (WAF) dan menggunakan OWASP CRS sebagai rulesnya.<br>
+  ![image](https://user-images.githubusercontent.com/52058660/131086573-536d0215-4b30-4c68-bf65-1db34956a5e2.png)
+
 - Fail2band
-- Setting SSL
+- Setting SSL (self-signed)<br>
+  SSL berfungsi untuk meng-encrypt data komunikasi antara client dan server. karena ini adalah proyek demo, saya hanya menggunakan self-signed certificate. Namun untuk proyek skala enterprise diharuskan menggunakan trusted CA sign SSL. Saya juga men-direct setiap request http (port 80) ke https (port 443).<br>
+  ![image](https://user-images.githubusercontent.com/52058660/131086356-d5c4dad4-2c27-40af-bfc7-b8029e470d71.png)
+
+  
 - Disable directory listing
 - Menyebunyikan apache version
 ### Serve
