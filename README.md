@@ -49,7 +49,7 @@ https://3209-182-253-250-108.ngrok.io/ <br>
   Setelah implementasi waf, serangan akan diblock.<br>
   <img width="844" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131095570-9fa82bc5-b706-4406-a191-cebb199d39b1.png"><br>
   jika anda memiliki SIEM, forward log ini ke SIEM anda untuk di analisa dan lakukan automasi alert.<br>
-
+  ![image](https://user-images.githubusercontent.com/52058660/131097860-997d98b4-3d42-4557-aa97-6f5ed16dfa51.png)
 
 - Fail2ban<br>
   Fail2ban berfungsi untuk mem-banned (blacklist) ip tertentu secara otomatis. Fungsi blacklist ip akan aktif jika ip masuk kedalam kriteria rules yang ada pada fail2ban.
