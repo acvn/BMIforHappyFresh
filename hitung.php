@@ -1,6 +1,5 @@
 <?php
 
-
 // fungsi output nilai BMI
 function nilaiBMI($nilaiberat, $nilaitinggi) {
 	global $BMI;
