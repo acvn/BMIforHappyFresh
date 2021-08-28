@@ -70,6 +70,7 @@ Rules pertama berfungsi untuk mendeteksi login failure pada apache, jika terdapa
   Setelah dilakukan hardenning<br>
   ![image](https://user-images.githubusercontent.com/52058660/131092467-1cf00320-348b-47a7-bdb8-71ac10e2851a.png)
 
+- Security Header
   
 ### Server
 - Menambahkan SSH public key<br>
