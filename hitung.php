@@ -64,7 +64,6 @@ $username = "aldi";
 $password = "J4k4rt4!";
 $database = "BMI";
 $conn = mysqli_connect($servername,$username,$password,$database);
-
 if(!$conn) {
 	die("connection failed: " . mysqli_connect_error());
 }
@@ -81,6 +80,7 @@ if ($conn->query($sql)) {
 } else {
 	echo "<br>" . "JSON tidak di parsing";
 }
+
 
 mysqli_close($conn);
 
