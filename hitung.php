@@ -41,8 +41,24 @@ function validasi($data) {
 $berat = validasi($_GET["beratbadan"]);	
 $tinggi = validasi($_GET["tinggibadan"] / 100);
 
-$A = nilaiBMI($berat, $tinggi);
-$B = LabelBMI($BMI);
+
+//Cek angka atau tidak
+if (filter_var($berat, FILTER_VALIDATE_INT) or filter_var($berat,FILTER_VALIDATE_FLOAT)){
+  if (filter_var($tinggi, FILTER_VALIDATE_INT)) {
+		$A = nilaiBMI($berat, $tinggi);
+		$B = LabelBMI($BMI);
+  }
+  elseif (filter_var($tinggi, FILTER_VALIDATE_FLOAT)){
+		$A = nilaiBMI($berat, $tinggi);
+		$B = LabelBMI($BMI);
+  }
+  else {
+    echo "Input ditolak";
+  }
+}
+else {
+  echo(" Input ditolak");
+}
 
 
 //koneksi ke mysql
@@ -62,13 +78,13 @@ $sql = "INSERT INTO databmi (nilaibmi, statusbmi) VALUES (" . $A .  ", '" . $B .
 
 if ($conn->query($sql)) {
 	$msg = array("bmi" => $A , "label" => "$B");
+	$json = $msg;
+	header('Content-type: application/json');
+	echo json_encode($json);
 } else {
-	echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+	echo "<br>" . "JSON tidak di parsing";
 }
 
-$json = $msg;
-header('Content-type: application/json');
-echo json_encode($json);
 mysqli_close($conn);
 
 ?>
