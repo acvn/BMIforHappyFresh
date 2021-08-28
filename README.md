@@ -73,10 +73,10 @@ Rules pertama berfungsi untuk mendeteksi login failure pada apache, jika terdapa
 - Security Header<br>
 ![image](https://user-images.githubusercontent.com/52058660/131203250-31c0b1c5-538a-4cd6-a1b3-1aa56696e377.png)<br>
 ![image](https://user-images.githubusercontent.com/52058660/131203329-4089afcb-c68e-4aaa-ba7b-6f51676ffc84.png)<br>
-  - HTTP Strict Transport Security (HSTS), membatasi interaksi website hanya dengan HTTPS tidak dengan HTTP. Berfungsi untuk mencegah cookie hijacking
-  - Content-Security-Policy, aturan yang mengatur resource apa yang boleh di ambil atau di eksekusi dalam web page. Salah satu fungsinya bisa mencegah XSS
-  - X-Frame-Options, berfungsi untuk mencegah clickjancking. Browser tidak aka meload website lain dalam frame
-  - X-Content-Type-Options, Mencegah content sniffing atau MIME sniffing<br>
+  - **HTTP Strict Transport Security (HSTS)**, membatasi interaksi website hanya dengan HTTPS tidak dengan HTTP. Berfungsi untuk mencegah cookie hijacking
+  - **Content-Security-Policy**, aturan yang mengatur resource apa yang boleh di ambil atau di eksekusi dalam web page. Salah satu fungsinya bisa mencegah XSS
+  - **X-Frame-Options**, berfungsi untuk mencegah clickjancking. Browser tidak aka meload website lain dalam frame
+  - **X-Content-Type-Options**, Mencegah content sniffing atau MIME sniffing<br>
 
   
 ### Server
