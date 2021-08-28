@@ -43,20 +43,18 @@ $tinggi = validasi($_GET["tinggibadan"] / 100);
 
 //Cek angka atau tidak
 if (filter_var($berat, FILTER_VALIDATE_INT) or filter_var($berat,FILTER_VALIDATE_FLOAT)){
-  if (filter_var($tinggi, FILTER_VALIDATE_INT)) {
+	if (filter_var($tinggi, FILTER_VALIDATE_INT)) {
 		$A = nilaiBMI($berat, $tinggi);
 		$B = LabelBMI($BMI);
-  }
-  elseif (filter_var($tinggi, FILTER_VALIDATE_FLOAT)){
+	}
+	elseif (filter_var($tinggi, FILTER_VALIDATE_FLOAT)){
 		$A = nilaiBMI($berat, $tinggi);
 		$B = LabelBMI($BMI);
-  }
-  else {
-    echo "Input ditolak";
-  }
-}
-else {
-  echo(" Input ditolak");
+	} else {
+		echo "Input ditolak";
+	}
+} else {
+	echo(" Input ditolak");
 }
 
 
