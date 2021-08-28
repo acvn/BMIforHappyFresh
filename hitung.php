@@ -12,18 +12,18 @@ function nilaiBMI($nilaiberat, $nilaitinggi) {
 //fungsi output label BMI
 function LabelBMI($nilai) {
 	if ($nilai >= 1 AND $nilai <= 18.5 ) {
-  $xx = "underweight";
-	return $xx;
-} elseif ($nilai > 18.5 AND $nilai < 25 ) {
-	$xx = "normal";
-	return $xx;
-} elseif ($nilai >= 25) {
-	$xx = "overweight";
-	return $xx;
-} else {
-	$xx = "input salah";
-	return $xx;
-}
+		$xx = "underweight";
+		return $xx;
+	} elseif ($nilai > 18.5 AND $nilai < 25 ) {
+		$xx = "normal";
+		return $xx;
+	} elseif ($nilai >= 25) {
+		$xx = "overweight";
+		return $xx;
+	} else {
+		$xx = "input salah";
+		return $xx;
+	}
 }
 
 
