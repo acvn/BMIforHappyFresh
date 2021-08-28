@@ -9,13 +9,14 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Cara Penggunaan
-Kunjungi link berikut ini, https://4819-182-253-250-108.ngrok.io/ (maaf domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi ngrok kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda). Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm, lalu tekan tombol hitung. Program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
+Kunjungi link berikut ini, https://8e6d-182-253-250-108.ngrok.io/ (maaf jika domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi ngrok kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda). Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm, lalu tekan tombol hitung. Program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
 **Contoh:**<br>
 Misalkan anda memiliki berat 65 kg dan tinggi 170 cm.<br><br>
-<img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071412-37543785-46d1-4079-a005-568408d4519b.png"><br>
+<img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131222033-12381299-38a2-4b16-b0f0-fdf6d58e7b0e.png"><br>
 
 Setelah menekan tombol hitung, program akan menghasilkan output dalam format json. Dapat dilihat pada gambar dibawah outputnya adalah nilai bmi 22,5 dan label bmi "normal".<br><br>
-<img width="743" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071519-3062a1e5-1d3f-4dc1-af8f-0982e7eff359.png"><br>
+<img width="743" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131222059-69cd4bba-ba3a-46eb-9754-cb4db181c5ac.png"><br>
+
 
 ## Teknologi
 - HTML dan CSS - Front-end
@@ -29,7 +30,7 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 ## Deployment
 - **Ngrok**<br>
 Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. **Maaf domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi ngrok kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda**. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, saya akan memberikan update url terbaru :)<br>
-https://4819-182-253-250-108.ngrok.io/ <br>
+https://8e6d-182-253-250-108.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
 
 
