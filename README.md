@@ -9,13 +9,14 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Cara Penggunaan
-Kunjungi link berikut ini, https://4819-182-253-250-108.ngrok.io/ (maaf domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi ngrok kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda). Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm, lalu tekan tombol hitung. Program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
+Kunjungi link berikut ini, https://4819-182-253-250-108.ngrok.io/ (maaf jika domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi ngrok kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda). Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm, lalu tekan tombol hitung. Program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
 **Contoh:**<br>
 Misalkan anda memiliki berat 65 kg dan tinggi 170 cm.<br><br>
-<img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071412-37543785-46d1-4079-a005-568408d4519b.png"><br>
+<img width="745" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131210659-83a2b95b-1105-46f2-80f1-9a9cead3a699.png"><br>
 
 Setelah menekan tombol hitung, program akan menghasilkan output dalam format json. Dapat dilihat pada gambar dibawah outputnya adalah nilai bmi 22,5 dan label bmi "normal".<br><br>
-<img width="743" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131071519-3062a1e5-1d3f-4dc1-af8f-0982e7eff359.png"><br>
+<img width="743" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131210694-816843ee-1119-4697-a1e4-e376dae3d8d7.png"><br>
+
 
 ## Teknologi
 - HTML dan CSS - Front-end
