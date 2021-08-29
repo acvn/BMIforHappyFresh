@@ -1,0 +1,19 @@
+body {
+	font-family: 'Courer New', Monospace
+}
+
+.pembungkus {
+	border: 1px solid darkgray;
+	padding: 20px;
+	width: max-content;
+	background-color: ghostwhite;
+}
+
+label {
+	font-size: 12px;
+	margin: 2px;
+}
+
+input {
+	margin: 2px;
+}
