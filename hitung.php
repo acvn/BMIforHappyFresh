@@ -74,10 +74,10 @@ if (filter_var($berat, FILTER_VALIDATE_INT) or filter_var($berat,FILTER_VALIDATE
 		$B = LabelBMI($BMI);
 		kirimdata($A, $B);
 	} else {
-		echo "Input ditolak";
+		echo "Input ditolak, jangan nakal :)";
 	}
 } else {
-	echo(" Input ditolak");
+	echo(" Input ditolak, jangan nakal :)");
 }
 
 
