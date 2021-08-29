@@ -1,5 +1,6 @@
 <?php
 
+
 // fungsi output nilai BMI
 function nilaiBMI($nilaiberat, $nilaitinggi) {
 	global $BMI;
@@ -36,6 +37,26 @@ function validasi($data) {
 }
 
 
+//Kirim data
+function kirimdata($j, $k){
+	$servername = "localhost";
+	$username = "aldi";
+	$password = "J4k4rt4!";
+	$database = "BMI";
+	$conn = mysqli_connect($servername,$username,$password,$database);
+	if(!$conn) {
+		die("connection failed: " . mysqli_connect_error());
+	}
+	$sql = "INSERT INTO databmi (nilaibmi, statusbmi) VALUES (" . $j .  ", '" . $k . "')";
+	if ($conn->query($sql)) {
+		$msg = array("bmi" => $j , "label" => "$k");
+		$json = $msg;
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+}
+
+
 //menerima data dari html form
 $berat = validasi($_GET["beratbadan"]);	
 $tinggi = validasi($_GET["tinggibadan"] / 100);
@@ -46,10 +67,12 @@ if (filter_var($berat, FILTER_VALIDATE_INT) or filter_var($berat,FILTER_VALIDATE
 	if (filter_var($tinggi, FILTER_VALIDATE_INT)) {
 		$A = nilaiBMI($berat, $tinggi);
 		$B = LabelBMI($BMI);
+		kirimdata($A, $B);
 	}
 	elseif (filter_var($tinggi, FILTER_VALIDATE_FLOAT)){
 		$A = nilaiBMI($berat, $tinggi);
 		$B = LabelBMI($BMI);
+		kirimdata($A, $B);
 	} else {
 		echo "Input ditolak";
 	}
@@ -58,30 +81,8 @@ if (filter_var($berat, FILTER_VALIDATE_INT) or filter_var($berat,FILTER_VALIDATE
 }
 
 
-//koneksi ke mysql
-$servername = "localhost";
-$username = "aldi";
-$password = "J4k4rt4!";
-$database = "BMI";
-$conn = mysqli_connect($servername,$username,$password,$database);
-if(!$conn) {
-	die("connection failed: " . mysqli_connect_error());
-}
-
-
-//kirim data
-$sql = "INSERT INTO databmi (nilaibmi, statusbmi) VALUES (" . $A .  ", '" . $B . "')";
-
-if ($conn->query($sql)) {
-	$msg = array("bmi" => $A , "label" => "$B");
-	$json = $msg;
-	header('Content-type: application/json');
-	echo json_encode($json);
-} else {
-	echo "<br>" . "JSON tidak di parsing";
-}
-
-
+//Tutup koneksi
 mysqli_close($conn);
+
 
 ?>
