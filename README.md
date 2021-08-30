@@ -40,11 +40,13 @@ https://60c2-182-253-250-101.ngrok.io/ <br>
 
 ## Security
 ### Code
-- **Input Validation**
+- **Input validasi karakter**
   - trim($data) , menghapus newline `\n`/`\r`, tab `\t` dan extraspace 
   - stripslashes($data) , menghapus slash `\`
   - htmlspecialchars($data) , mengkonversikan predefined characters menjadi HTML entities, contoh: `<` menjadi `&lt;`<br>
 ![image](https://user-images.githubusercontent.com/52058660/131080651-89f3b9a1-591d-46fc-ba21-d94ba1f44bcc.png)<br>
+- **Input validasi hanya angka**
+![image](https://user-images.githubusercontent.com/52058660/131271844-25cdb810-612e-4ece-ba06-e5dfff4ad4eb.png)
 
 
 ### Web Server Software
