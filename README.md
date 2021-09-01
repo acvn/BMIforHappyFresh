@@ -9,7 +9,7 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Url yang aktif (updated)
-https://40ec-182-253-250-99.ngrok.io/ <br>
+**>>>https://40ec-182-253-250-99.ngrok.io/<<<**<br>
 (**maaf jika domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi internet saya kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda**). 
 
 ## Cara Penggunaan
