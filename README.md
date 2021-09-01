@@ -23,12 +23,12 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 
 ## Teknologi
-- HTML dan CSS - Front-end
-- PHP - Back-emd
-- MySQL - Database
+- HTML v5 dan CSS v3- Front-end
+- PHP v7.4.3 - Back-emd
+- MySQL v8.0 - Database
 - Apache2 - Web server sorver
-- ModSecurity - Web application firewall (WAF)
-- Fail2ban - IPS
+- ModSecurity v2.0 - Web application firewall (WAF)
+- Fail2ban v0.11.1 - 
 - Ubuntu 20.04 - Server
 
 ## Deployment
