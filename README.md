@@ -9,7 +9,7 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Overweight (BMI >= 25)
 
 ## Url yang aktif (updated)
-https://b1e4-182-253-250-101.ngrok.io/ <br>
+**>>>https://16be-182-253-250-99.ngrok.io/<<<**<br>
 (**maaf jika domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi internet saya kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda**). 
 
 ## Cara Penggunaan
@@ -23,18 +23,18 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 
 ## Teknologi
-- HTML dan CSS - Front-end
-- PHP - Back-emd
-- MySQL - Database
+- HTML v5 dan CSS v3- Front-end
+- PHP v7.4.3 - Back-emd
+- MySQL v8.0 - Database
 - Apache2 - Web server sorver
-- ModSecurity - Web application firewall (WAF)
-- Fail2ban - IPS
+- ModSecurity v2.0 - Web application firewall (WAF)
+- Fail2ban v0.11.1 - 
 - Ubuntu 20.04 - Server
 
 ## Deployment
 - **Ngrok**<br>
 Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. **Maaf domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi internet kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda**. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, saya akan memberikan update url terbaru :)<br>
-https://b1e4-182-253-250-101.ngrok.io/ <br>
+https://16be-182-253-250-99.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
 
 
