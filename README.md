@@ -37,6 +37,10 @@ Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut 
 https://16be-182-253-250-99.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
 
+## Installation
+### Biasa
+### Docker
+### Microservice
 
 ## Security
 ### Code
