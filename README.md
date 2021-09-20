@@ -4,9 +4,9 @@ Kalkulator BMI (body-mass index) adalah sebuah program yang menghitung indeks ma
 <p align="center"><img src="https://user-images.githubusercontent.com/52058660/131056213-14128e17-3e25-458b-b21d-4eba5b19703f.png"></p>
 
 Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
-- Underweight (BMI <= 18,4)
-- Normal (18,4 <= BMI <= 24,9)
-- Overweight (BMI >= 25)
+- Underweight (**BMI <= 18,4**)
+- Normal (**18,4 <= BMI <= 24,9**)
+- Overweight (**BMI >= 25**)
 
 ## Cara Penggunaan
 Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm, lalu tekan tombol hitung. Program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
