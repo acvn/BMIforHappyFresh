@@ -8,10 +8,6 @@ Nilai dari hasil perhitungan BMI akan dikelompokkan menjadi 3 label berikut:<br>
 - Normal (18,4 <= BMI <= 24,9)
 - Overweight (BMI >= 25)
 
-## Url yang aktif (updated)
-**>>>https://16be-182-253-250-99.ngrok.io/<<<**<br>
-(**maaf jika domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi internet saya kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda**). 
-
 ## Cara Penggunaan
 Anda cukup memasukkan nilai berat badan dalam satuan Kg dan nilai tinggi badan dalam satuan cm, lalu tekan tombol hitung. Program akan otomatis menghitung nilai BMI anda dan menampikannya dalam format json. <br><br>
 **Contoh:**<br>
@@ -20,7 +16,6 @@ Misalkan anda memiliki berat 65 kg dan tinggi 170 cm.<br><br>
 
 Setelah menekan tombol hitung, program akan menghasilkan output dalam format json. Dapat dilihat pada gambar dibawah outputnya adalah nilai bmi 22,5 dan label bmi "normal".<br><br>
 <img width="743" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131222059-69cd4bba-ba3a-46eb-9754-cb4db181c5ac.png"><br>
-
 
 ## Teknologi
 - HTML
@@ -38,11 +33,41 @@ Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut 
 https://16be-182-253-250-99.ngrok.io/ <br>
 ![image](https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png)
 
-## Installation
-### Biasa
-### Docker
-### Microservice
+## Docker Installation
+- Docker-compose
+```
+version: '3.8'
+services:
+  php-apache-environment:
+    container_name: php-apache
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    volumes:
+      - ./php/src:/var/www/html
+    ports:
+      - 8000:80
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: J4k4rt4!
+      MYSQL_DATABASE: BMI
+      MYSQL_USER: aldi
+      MYSQL_PASSWORD: J4k4rt4!
+    ports:
+      - "9906:3306"
+```
+- Dockerfile
+```
+FROM php:8.0-apache
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+RUN apt-get update && apt-get upgrade -y
 
+```
 ## Security
 ### Code
 - **Input validasi karakter**
