@@ -29,8 +29,7 @@ Setelah menekan tombol hitung, program akan menghasilkan output dalam format jso
 
 ## Deployment
 - **Ngrok**<br>
-Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. **Maaf domain yang saya diberikan berbeda dengan domain pada gambar karena koneksi internet kadang error dan ketika direstart ngrok akan memberikan domain yang berbeda**. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, saya akan memberikan update url terbaru :)<br>
-<img width="500" alt="gambar" src="https://user-images.githubusercontent.com/52058660/131087118-c0ad8587-422a-4724-891b-6e2b4a30e18a.png">
+Untuk proyek ini saya mendeploy programnya pada VM lokal. Agar website tersebut dapat diakses oleh jaringan publik saya menggunakan ngrok. Jangan sungkan untuk menghubungi saya ketika website tidak dapat diakses, saya akan memberikan update url terbaru :)
 
 ## Docker Installation
 - Docker-compose
